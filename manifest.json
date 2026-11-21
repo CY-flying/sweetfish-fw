@@ -1,0 +1,341 @@
+{
+  "ver": "1.20261121.3",
+  "bin": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/photopainter_album.bin",
+  "sha256": "f45c9b8fb7007191275d8a79b9f518b49fb1ccd24bf1707b218f18a6c54046bf",
+  "size": 2077728,
+  "desc": [
+    "修复插着 USB 仍每十几秒自动关机的问题（电源管理中断位解析错误）",
+    "登录门户恢复正常跳转：点按钮直接进系统浏览器，地址栏变成 192.168.4.1",
+    "配网成功立即落盘，重启不用重新输密码；连接失败提示改成具体原因",
+    "工作台新版式：顶部时钟居中，温湿度各配 24 小时折线图，缺数据用虚线并标注最高最低",
+    "工作台支持白天 / 黑夜配色，底部花草带随天气变化",
+    "温度计、水滴、云朵改为彩色图标，不再用黑色块",
+    "提示音支持多套语音包与随机变体，新增文件管理与音乐上传"
+  ],
+  "assets": [
+    {
+      "path": "/sounds/rikki/ap_mode.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/ap_mode.wav",
+      "sha256": "06b5c60bcf52ea537041865d897ff962b01b61023526ac4e04cef48d5e05eb59",
+      "size": 144684
+    },
+    {
+      "path": "/sounds/rikki/ap_mode_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/ap_mode_1.wav",
+      "sha256": "c28cf9cc669f4f32f2ee33581dd1eefd4f65565a32640aad9c32981c04d68ffe",
+      "size": 139564
+    },
+    {
+      "path": "/sounds/rikki/boot.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/boot.wav",
+      "sha256": "af5390ac709faca2000d3c3d69ec2fbbf5d9be93b4cc1a308c2f1b0f6dacd47c",
+      "size": 160044
+    },
+    {
+      "path": "/sounds/rikki/boot_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/boot_1.wav",
+      "sha256": "d150a9aa59bc8ef6ae8a3d63eaeb7e5e194c3a5a61489ad3639a84588cfafb19",
+      "size": 165164
+    },
+    {
+      "path": "/sounds/rikki/boot_2.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/boot_2.wav",
+      "sha256": "f10e15329d2e21ba221598a11cb796f0e1201e701bf8a69ef495f0e085ff9089",
+      "size": 134444
+    },
+    {
+      "path": "/sounds/rikki/boot_3.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/boot_3.wav",
+      "sha256": "b75b860d49edd3b134b9aa3c29870b287cbed43361814696b4340459190004e5",
+      "size": 234284
+    },
+    {
+      "path": "/sounds/rikki/dnd_enter.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/dnd_enter.wav",
+      "sha256": "80abb7b34c6713bec8b6aedb1c0a9eefa068c588d0a881ac70322267041a85ef",
+      "size": 113964
+    },
+    {
+      "path": "/sounds/rikki/dnd_enter_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/dnd_enter_1.wav",
+      "sha256": "3c3a87d6c24b75398d85f3255d8c80aff75ec52787188218fdf89baf46111547",
+      "size": 154924
+    },
+    {
+      "path": "/sounds/rikki/dnd_exit.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/dnd_exit.wav",
+      "sha256": "136dd15cc212430185fdc93cd9ceb7faf7ed29724148e591d5ad826cd177f2f0",
+      "size": 149804
+    },
+    {
+      "path": "/sounds/rikki/dnd_exit_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/dnd_exit_1.wav",
+      "sha256": "d035290776b51ac57e9317a476d62b249d40042c11b4192ef6a68bac2893e5c4",
+      "size": 165164
+    },
+    {
+      "path": "/sounds/rikki/error.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/error.wav",
+      "sha256": "96196db8f29873db5aa1aed10a1454bc36c900c410ae55235ecb2df201dd2374",
+      "size": 121644
+    },
+    {
+      "path": "/sounds/rikki/error_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/error_1.wav",
+      "sha256": "82a7b3e5f966e63f00d834e049bd6ef98a154eacb2ad43c526134ea1618e3095",
+      "size": 134444
+    },
+    {
+      "path": "/sounds/rikki/layout.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/layout.wav",
+      "sha256": "0557fd403b5a2f7114bec99294621e5a1eebf664102c189a10df20b6a29b48f2",
+      "size": 111404
+    },
+    {
+      "path": "/sounds/rikki/layout_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/layout_1.wav",
+      "sha256": "55648ca0751cd38010ad1af2ed1e37a199d3ffdc0ec07336bfd9fab674a7e4ad",
+      "size": 126764
+    },
+    {
+      "path": "/sounds/rikki/lowbat.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/lowbat.wav",
+      "sha256": "ef4259f8d9c2e1ad32a1908a8a7465fe6161ab7391c7e77ec7f0a2e51fd15249",
+      "size": 93484
+    },
+    {
+      "path": "/sounds/rikki/lowbat_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/lowbat_1.wav",
+      "sha256": "81f870ffef0105822a95126169a6d03dc1661e4dfcf43131545a02535790ef8d",
+      "size": 175404
+    },
+    {
+      "path": "/sounds/rikki/music.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/music.wav",
+      "sha256": "7d6406ef3ff3a48a5c1f9e41bc023c6f6ef3e6a24e6756944ab399dc47f34c04",
+      "size": 126764
+    },
+    {
+      "path": "/sounds/rikki/music_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/music_1.wav",
+      "sha256": "33db21563bf63162f42091dca05901d610455be51a87ffbd40099f55f5144193",
+      "size": 134444
+    },
+    {
+      "path": "/sounds/rikki/music_stop.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/music_stop.wav",
+      "sha256": "3338f1d6ad659815edd5430aebd5c14d7c8a5ced07af3202d31e4d991f238bec",
+      "size": 106284
+    },
+    {
+      "path": "/sounds/rikki/music_stop_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/music_stop_1.wav",
+      "sha256": "942c6d0d15c3c9f905e75883495390373de9e90b713aadbb848ab1ddd0c14369",
+      "size": 119084
+    },
+    {
+      "path": "/sounds/rikki/ota_done.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/ota_done.wav",
+      "sha256": "7d7d27d97adfadc9cf457ee779c69b5f51184b9b2eb457c6b49e83ac1b0a5ca9",
+      "size": 108844
+    },
+    {
+      "path": "/sounds/rikki/ota_done_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/ota_done_1.wav",
+      "sha256": "ce9af6d9009fa196e8b4e4ec5d46d9f97fdc8c3223c8bc70516b622ab326ea55",
+      "size": 129324
+    },
+    {
+      "path": "/sounds/rikki/ota_fail.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/ota_fail.wav",
+      "sha256": "e2c5dd23476f57f1a612433eac3f9ce77e3b6325dd36b33471db56c9b54b24bc",
+      "size": 142124
+    },
+    {
+      "path": "/sounds/rikki/ota_fail_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/ota_fail_1.wav",
+      "sha256": "7c5f3fb4df9b4bd93bf2961b024347e81be7ee2a1316587f11475f373e06e1c9",
+      "size": 139564
+    },
+    {
+      "path": "/sounds/rikki/ota_start.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/ota_start.wav",
+      "sha256": "452c0a00c91dae06fda155db02328c3e7e4f4f0869037163c953daa1be0f6f52",
+      "size": 147244
+    },
+    {
+      "path": "/sounds/rikki/ota_start_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/ota_start_1.wav",
+      "sha256": "ea5d396c2fa3c9491cfeb2a69dad891139ba108899a7ce1c336d10bec00c10f8",
+      "size": 131884
+    },
+    {
+      "path": "/sounds/rikki/pack.json",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/pack.json",
+      "sha256": "1105e9f154f898323f79385513c259c0072a60b18bb4c3ee39849407b9b73a37",
+      "size": 282
+    },
+    {
+      "path": "/sounds/rikki/refresh.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/refresh.wav",
+      "sha256": "fe119339d0c1e58d9f049f84caa8ba33a182fbf34ea9bfc24c399d1b0ee0cbc1",
+      "size": 113964
+    },
+    {
+      "path": "/sounds/rikki/refresh_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/refresh_1.wav",
+      "sha256": "cdde29fb64e4ea49cc7ba6cf39beaa8fb3a84624f583d97df15c6fe22d23daf4",
+      "size": 149804
+    },
+    {
+      "path": "/sounds/rikki/sd_full.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/sd_full.wav",
+      "sha256": "608f02cb5b0153a654fdb32f234d1b6b0978962fac330cfb5f08f013922697ac",
+      "size": 129324
+    },
+    {
+      "path": "/sounds/rikki/sd_full_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/sd_full_1.wav",
+      "sha256": "6e641492bcc40528cc53717920ac5bb1b8d62a59042708ed79a44ad265779206",
+      "size": 170284
+    },
+    {
+      "path": "/sounds/rikki/sleep.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/sleep.wav",
+      "sha256": "caf57f2c46b1693ad006eec3eefa9732b521b081a93e6875d268515812b44bc0",
+      "size": 98604
+    },
+    {
+      "path": "/sounds/rikki/sleep_2.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/sleep_2.wav",
+      "sha256": "1558c602d450c062870e54b3d5565247094249629753007168f5b680d1924710",
+      "size": 108844
+    },
+    {
+      "path": "/sounds/rikki/time_set.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/time_set.wav",
+      "sha256": "6761782adb979abf01afda3f0aa6080c10cb98f41acefe8a1176df38491e1245",
+      "size": 149804
+    },
+    {
+      "path": "/sounds/rikki/time_set_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/time_set_1.wav",
+      "sha256": "0bfe99a34537d6ee4db84ff719ce37f7ea4e9dcdea4d4733fb93af39767adf39",
+      "size": 157484
+    },
+    {
+      "path": "/sounds/rikki/upload_fail.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/upload_fail.wav",
+      "sha256": "618a1343556894cb45fd0f1bd5430b316a59ad6e90b856c5c115b1fcff659102",
+      "size": 149804
+    },
+    {
+      "path": "/sounds/rikki/upload_fail_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/upload_fail_1.wav",
+      "sha256": "c65eefbc72b5cbcdbb19b250e503e801a31a3e260ab18b3d7d89f51afe975241",
+      "size": 126764
+    },
+    {
+      "path": "/sounds/rikki/upload_ok.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/upload_ok.wav",
+      "sha256": "ce43a6f640aa843082486134305334692c3ad92134837b27a3b0b2838aef1b8a",
+      "size": 144684
+    },
+    {
+      "path": "/sounds/rikki/upload_ok_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/upload_ok_1.wav",
+      "sha256": "059c9385f3f94960cd552835cd21cbfda989d1a5365422f05e7571ddec3539e1",
+      "size": 111404
+    },
+    {
+      "path": "/sounds/rikki/upload_ok_2.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/upload_ok_2.wav",
+      "sha256": "803e745b9d3ffd47685ce5772ac6be0d291d52c8e9ad1a5f9448d4cd1b6a76ae",
+      "size": 167724
+    },
+    {
+      "path": "/sounds/rikki/vol_down.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/vol_down.wav",
+      "sha256": "8a3f596d4e10d633a6c69bf05057933a1e7991cb889c912164e0cb0079488658",
+      "size": 62764
+    },
+    {
+      "path": "/sounds/rikki/vol_down_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/vol_down_1.wav",
+      "sha256": "ccfed1646b1d471b828be1c009cb7a883720bdedd5f64ee78c5a8113870dae03",
+      "size": 62764
+    },
+    {
+      "path": "/sounds/rikki/vol_up.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/vol_up.wav",
+      "sha256": "514347ff3f65d28d1fdf2d616e585455a1692201141be4a25132eeabb97826ae",
+      "size": 96044
+    },
+    {
+      "path": "/sounds/rikki/vol_up_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/vol_up_1.wav",
+      "sha256": "687b74f620165c547b3ce03a37b0afd2f84d129cefca3cd1d058f9a77019e12d",
+      "size": 96044
+    },
+    {
+      "path": "/sounds/rikki/wake.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/wake.wav",
+      "sha256": "7dc47487859f643089d5f8354b5427c05d6753f52e9efdb206328d3d5d6bb2b8",
+      "size": 101164
+    },
+    {
+      "path": "/sounds/rikki/wake_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/wake_1.wav",
+      "sha256": "e9536dab5d149e330db7781b7b93d45da9ee2f6604c8a5cb80a735de8f3e3e75",
+      "size": 131884
+    },
+    {
+      "path": "/sounds/rikki/wake_2.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/wake_2.wav",
+      "sha256": "3cbb5bbcbb14be4c326762bace3d14c968302a6d8877b999c2dadd0a28e775ca",
+      "size": 111404
+    },
+    {
+      "path": "/sounds/rikki/weather_ok.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/weather_ok.wav",
+      "sha256": "c81e5c713d677de87165e6c240faf260fa921b4c0dd2cdb96274014b923f140a",
+      "size": 149804
+    },
+    {
+      "path": "/sounds/rikki/weather_ok_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/weather_ok_1.wav",
+      "sha256": "71e7742d20a9b743cd178c8dc16cf133c28bc4bd91eff4c9eacc5e0c222647c7",
+      "size": 170284
+    },
+    {
+      "path": "/sounds/rikki/wifi_fail.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/wifi_fail.wav",
+      "sha256": "7e02ea7d16fbdb928741bc57fcd50fc0b13932ad0c5c79b25e638dbdeea1e44d",
+      "size": 167724
+    },
+    {
+      "path": "/sounds/rikki/wifi_fail_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/wifi_fail_1.wav",
+      "sha256": "6c50c9efef81b041017d2d221a0d51a232b7bf21d1c51bab7a78a1d7f739e44b",
+      "size": 201004
+    },
+    {
+      "path": "/sounds/rikki/wifi_fail_2.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/wifi_fail_2.wav",
+      "sha256": "4ae7daa7e0102c8cd89a16eb9982a2c936e1aaa6914020d1960c7e70b8fac54e",
+      "size": 183084
+    },
+    {
+      "path": "/sounds/rikki/wifi_ok.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/wifi_ok.wav",
+      "sha256": "4d33860e5e98987189730d79e620cf4c95394de67d69e3a2c3da3fd83d96f380",
+      "size": 213804
+    },
+    {
+      "path": "/sounds/rikki/wifi_ok_1.wav",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/wifi_ok_1.wav",
+      "sha256": "843ac6fd5368c08c79b41343ef8ee04c443efd4570f47c5262692d0a3e7a3841",
+      "size": 124204
+    }
+  ]
+}

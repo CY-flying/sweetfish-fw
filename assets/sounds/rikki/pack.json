@@ -1,0 +1,10 @@
+{
+  "id": "rikki",
+  "name": "Rikki",
+  "author": "椎名立希",
+  "version": "1.0",
+  "lang": "zh-CN",
+  "sample_rate": 32000,
+  "gain": 100,
+  "note": "32 kHz / 16 bit / 单声道。同一事件多个变体用 <事件>_1.wav 这种命名，播放时随机挑一条。"
+}
