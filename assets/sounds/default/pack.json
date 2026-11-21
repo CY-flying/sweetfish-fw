@@ -1,0 +1,10 @@
+{
+  "id": "default",
+  "name": "出厂",
+  "author": "SweetFish",
+  "version": "1.0",
+  "lang": "zh-CN",
+  "sample_rate": 16000,
+  "gain": 100,
+  "note": "回落包：别的包缺哪个事件，就用这里的同名文件"
+}

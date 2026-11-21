@@ -14,6 +14,12 @@
   ],
   "assets": [
     {
+      "path": "/sounds/default/pack.json",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/default/pack.json",
+      "sha256": "3939c23982ac76eea219605c005ddfcc23d32d2d96a030baad9fceac2bfe8e5a",
+      "size": 225
+    },
+    {
       "path": "/sounds/rikki/ap_mode.wav",
       "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/ap_mode.wav",
       "sha256": "06b5c60bcf52ea537041865d897ff962b01b61023526ac4e04cef48d5e05eb59",
