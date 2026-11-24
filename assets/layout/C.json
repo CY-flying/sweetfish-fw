@@ -1,0 +1,322 @@
+{
+  "version": 13,
+  "name": "workbench",
+  "canvas": [
+    800,
+    480
+  ],
+  "_note": "工作台横版。顶部只留大号小时（正中）。第二行：左天气图标+天气/地点、右高低温、最右是水怪/印章/电量/月亮标记。中部温湿度两栏，温度计/水滴图元与 48 号数字等高，右侧变化量用红升蓝降箭头 + 绝对值。下部彩色月历（今天红胶囊、周日红、周六蓝），最底一整条花草带。",
+  "layers": [
+    {
+      "type": "rect",
+      "rect": [
+        0,
+        0,
+        800,
+        480
+      ],
+      "color": 1
+    },
+    {
+      "type": "text",
+      "rect": [
+        280,
+        0,
+        240,
+        80
+      ],
+      "font": "mono48",
+      "color": 0,
+      "align": "center",
+      "valign": "middle",
+      "format": "{HH}H"
+    },
+    {
+      "type": "wxicon",
+      "src": "now",
+      "rect": [
+        20,
+        92,
+        48,
+        48
+      ],
+      "when": "wx"
+    },
+    {
+      "type": "text",
+      "rect": [
+        78,
+        90,
+        220,
+        28
+      ],
+      "font": "mono24",
+      "color": 0,
+      "align": "left",
+      "valign": "middle",
+      "format": "{WCS}",
+      "when": "wx"
+    },
+    {
+      "type": "text",
+      "rect": [
+        78,
+        120,
+        220,
+        20
+      ],
+      "font": "mono16",
+      "color": 4,
+      "align": "left",
+      "valign": "middle",
+      "format": "{WP}",
+      "when": "wx"
+    },
+    {
+      "type": "text",
+      "rect": [
+        546,
+        90,
+        140,
+        26
+      ],
+      "font": "mono24",
+      "color": 3,
+      "align": "right",
+      "valign": "middle",
+      "format": "H {HI}",
+      "when": "wx"
+    },
+    {
+      "type": "text",
+      "rect": [
+        546,
+        120,
+        140,
+        26
+      ],
+      "font": "mono24",
+      "color": 4,
+      "align": "right",
+      "valign": "middle",
+      "format": "L {LO}",
+      "when": "wx"
+    },
+    {
+      "type": "icon",
+      "id": "mark_odd",
+      "rect": [
+        742,
+        92,
+        34,
+        34
+      ],
+      "name": "monster",
+      "color": 0,
+      "when": "hour_odd"
+    },
+    {
+      "type": "icon",
+      "id": "mark_even",
+      "rect": [
+        742,
+        92,
+        34,
+        34
+      ],
+      "name": "seal",
+      "color": 3,
+      "when": "hour_even"
+    },
+    {
+      "type": "icon",
+      "id": "mark_bat",
+      "rect": [
+        742,
+        92,
+        34,
+        34
+      ],
+      "name": "bat0",
+      "color": 0,
+      "when": "lowbat"
+    },
+    {
+      "type": "rect",
+      "rect": [
+        20,
+        152,
+        760,
+        1
+      ],
+      "color": 0
+    },
+    {
+      "type": "text",
+      "rect": [
+        78,
+        158,
+        240,
+        20
+      ],
+      "font": "mono16",
+      "color": 0,
+      "align": "left",
+      "valign": "middle",
+      "format": "INDOOR TEMP"
+    },
+    {
+      "type": "glyph",
+      "shape": "thermo",
+      "rect": [
+        24,
+        184,
+        46,
+        52
+      ],
+      "color": 3
+    },
+    {
+      "type": "text",
+      "rect": [
+        80,
+        180,
+        150,
+        60
+      ],
+      "font": "mono48",
+      "color": 0,
+      "align": "right",
+      "valign": "middle",
+      "format": "{T}"
+    },
+    {
+      "type": "text",
+      "rect": [
+        236,
+        194,
+        26,
+        32
+      ],
+      "font": "mono24",
+      "color": 0,
+      "align": "left",
+      "valign": "middle",
+      "format": "C"
+    },
+    {
+      "type": "chart",
+      "src": "temp",
+      "rect": [
+        268,
+        156,
+        124,
+        96
+      ],
+      "font": "mono16"
+    },
+    {
+      "type": "rect",
+      "rect": [
+        400,
+        158,
+        2,
+        104
+      ],
+      "color": 0
+    },
+    {
+      "type": "text",
+      "rect": [
+        414,
+        158,
+        240,
+        20
+      ],
+      "font": "mono16",
+      "color": 4,
+      "align": "left",
+      "valign": "middle",
+      "format": "REL HUMIDITY"
+    },
+    {
+      "type": "glyph",
+      "shape": "drop",
+      "rect": [
+        414,
+        184,
+        46,
+        52
+      ],
+      "color": 4
+    },
+    {
+      "type": "text",
+      "rect": [
+        470,
+        180,
+        90,
+        60
+      ],
+      "font": "mono48",
+      "color": 4,
+      "align": "right",
+      "valign": "middle",
+      "format": "{H}"
+    },
+    {
+      "type": "text",
+      "rect": [
+        566,
+        194,
+        64,
+        24
+      ],
+      "font": "mono24",
+      "color": 4,
+      "align": "left",
+      "valign": "middle",
+      "format": "%RH"
+    },
+    {
+      "type": "chart",
+      "src": "hum",
+      "rect": [
+        632,
+        158,
+        146,
+        96
+      ],
+      "font": "mono16"
+    },
+    {
+      "type": "rect",
+      "rect": [
+        20,
+        266,
+        760,
+        1
+      ],
+      "color": 0
+    },
+    {
+      "type": "calendar",
+      "rect": [
+        20,
+        272,
+        760,
+        152
+      ],
+      "font": "mono16"
+    },
+    {
+      "type": "scenery",
+      "rect": [
+        20,
+        428,
+        760,
+        48
+      ]
+    }
+  ]
+}

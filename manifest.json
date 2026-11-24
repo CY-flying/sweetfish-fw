@@ -1,18 +1,135 @@
 {
-  "ver": "1.20261121.3",
-  "bin": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/photopainter_album_1.20261121.3.bin",
-  "sha256": "f45c9b8fb7007191275d8a79b9f518b49fb1ccd24bf1707b218f18a6c54046bf",
-  "size": 2077728,
+  "ver": "2.20261124.0-beta",
+  "bin": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/photopainter_album_2.20261124.0-beta.bin",
+  "sha256": "5192d199f791cd4ab36a3c7e2644a048831242c63993c850ff2db25869bc6c35",
+  "size": 2138672,
   "desc": [
-    "修复插着 USB 仍每十几秒自动关机的问题（电源管理中断位解析错误）",
-    "登录门户恢复正常跳转：点按钮直接进系统浏览器，地址栏变成 192.168.4.1",
-    "配网成功立即落盘，重启不用重新输密码；连接失败提示改成具体原因",
-    "工作台新版式：顶部时钟居中，温湿度各配 24 小时折线图，缺数据用虚线并标注最高最低",
-    "工作台支持白天 / 黑夜配色，底部花草带随天气变化",
-    "温度计、水滴、云朵改为彩色图标，不再用黑色块",
-    "提示音支持多套语音包与随机变体，新增文件管理与音乐上传"
+    "2.0 大版本：新增指示灯、照片刷新方式、媒体资源在线同步、AI 助手",
+    "服务模式绿灯常亮，刷屏时绿灯闪烁，休眠全灭",
+    "照片刷新可选列表循环 / 固定单张 / 随机，每次整点重新选",
+    "新增「同步媒体资源」：语音包、字库、图标、版式按清单补到 SD 卡，已一致的不重下",
+    "语音提示可按通知项分组开关：开关机 / 日常刷新 / 设备状态 / 升级出错 / 音乐",
+    "批量上传改为独立窗口：逐张缩略图与状态、暂停 / 继续 / 取消 / 重试失败项",
+    "批量上传可整批设为铺满或适应，也能给每张单独指定裁切方式",
+    "上传照片支持「自动」方向：按照片宽高自动进横向或竖向相册",
+    "新增单张上传进度条，上传成功后「更换照片」变为「下一张」",
+    "新增 AI 助手：内置中文短句（换版式、下一张、刷新、休眠、查读数），也可接自建服务"
   ],
   "assets": [
+    {
+      "path": "/boot.p6",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/boot.p6",
+      "sha256": "7d7fb4ccb9191b522ce6c1ad9b4a68b8ed5df4398e353755314b3664ae2c33d6",
+      "size": 192000
+    },
+    {
+      "path": "/bootp.p6",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/bootp.p6",
+      "sha256": "bcdac04424f8aaf640d28f1652fedace08ad3ed2ba65b0db1334bb1e6f6d0359",
+      "size": 192000
+    },
+    {
+      "path": "/bootpr.p6",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/bootpr.p6",
+      "sha256": "68ce6f10f5f816f1ef360578cefdc858bca503da9b150f86f82b2810c5a49dff",
+      "size": 192000
+    },
+    {
+      "path": "/fonts/mono16.bin",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/fonts/mono16.bin",
+      "sha256": "979265e0674ad7de913835cd4d47a62ac3b6e23b6895ce61f57f5929241a191b",
+      "size": 2866
+    },
+    {
+      "path": "/fonts/mono24.bin",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/fonts/mono24.bin",
+      "sha256": "42287b8914185a0c4b7b9d0e61718696dca3ce0d6ceea14849ed697ae58dd5f5",
+      "size": 4386
+    },
+    {
+      "path": "/fonts/mono32.bin",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/fonts/mono32.bin",
+      "sha256": "5b19505583ce5aa324a683066d8a6459e44f74c11eebc15efe137d5d109b0e63",
+      "size": 8566
+    },
+    {
+      "path": "/fonts/mono48.bin",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/fonts/mono48.bin",
+      "sha256": "f987bd85ea0122df036a4e00d4f89e766e31f2c6ad886d022c8d450aa84f0cc4",
+      "size": 17876
+    },
+    {
+      "path": "/icons/bat0.bin",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/icons/bat0.bin",
+      "sha256": "adf731a92be70dc580f78dc8110751e4b3dd9754642a465706ba8cc069a4c190",
+      "size": 80
+    },
+    {
+      "path": "/icons/drop.bin",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/icons/drop.bin",
+      "sha256": "7d5e4f130b47a6cea316232492969ab96f1436008407cf49635164f31dde9866",
+      "size": 80
+    },
+    {
+      "path": "/icons/monster.bin",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/icons/monster.bin",
+      "sha256": "9e31fb078c830f83457529806b2ddd92dcf82d7b915ebe78600a613ec603af77",
+      "size": 586
+    },
+    {
+      "path": "/icons/moon.bin",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/icons/moon.bin",
+      "sha256": "e717a5f33fd6e8ffc8303bf690d79db4f32c2a3982752de1a66f0328713bfac6",
+      "size": 128
+    },
+    {
+      "path": "/icons/seal.bin",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/icons/seal.bin",
+      "sha256": "540ba8bc5c0066a4739918666c6dd0952e13220c54105564c08b7e45983dfefd",
+      "size": 128
+    },
+    {
+      "path": "/icons/thermo.bin",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/icons/thermo.bin",
+      "sha256": "a8e220e1048d3d5c5bccea7c3cf00f481173528495633b7a3e931cf4c8bd1c44",
+      "size": 80
+    },
+    {
+      "path": "/layout/A.json",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/layout/A.json",
+      "sha256": "cc128b54e2521f56ef903621caa76641ded138bea74299254703468e5faeba7a",
+      "size": 166
+    },
+    {
+      "path": "/layout/Ap.json",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/layout/Ap.json",
+      "sha256": "a9218d736cec8af1487f60cf6ea85f21e6101d0a628cfef22d2a5dab3918e10a",
+      "size": 269
+    },
+    {
+      "path": "/layout/B.json",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/layout/B.json",
+      "sha256": "b7a8acabf225d5ba2e77047fe1587d99cb26612b72dc331a43d093365725be27",
+      "size": 2397
+    },
+    {
+      "path": "/layout/Bp.json",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/layout/Bp.json",
+      "sha256": "4933c63fc06fb87fe86ae89fec54235240865f0d65616f837321da520fe84939",
+      "size": 2441
+    },
+    {
+      "path": "/layout/C.json",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/layout/C.json",
+      "sha256": "99051ae6e759cb43db2e9e45aaa715a74917326a071c2a3accb0a264a513253a",
+      "size": 5462
+    },
+    {
+      "path": "/layout/Cp.json",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/layout/Cp.json",
+      "sha256": "cce989d2e5309fe1e7b7052a540279f7d9601f952de20a57edd08a07ca337b95",
+      "size": 5627
+    },
     {
       "path": "/sounds/default/pack.json",
       "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/default/pack.json",
@@ -342,6 +459,72 @@
       "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/sounds/rikki/wifi_ok_1.wav",
       "sha256": "843ac6fd5368c08c79b41343ef8ee04c443efd4570f47c5262692d0a3e7a3841",
       "size": 124204
+    },
+    {
+      "path": "/www/api.js",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/www/api.js",
+      "sha256": "2af3ff096dffc59a0259c9dddefac0db5158cf947f995d60d7209214aa4c6006",
+      "size": 27547
+    },
+    {
+      "path": "/www/app.js",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/www/app.js",
+      "sha256": "4a3b812a4d5836a9a46df9fb663bdfaa6977c3fed02f0af76d7a188083d3b7e3",
+      "size": 178910
+    },
+    {
+      "path": "/www/bar.js",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/www/bar.js",
+      "sha256": "2d3000aa081d0a77cf1e2dd4b138da51b9b42e0ba599d9a97f1a8f7d0d3c16ce",
+      "size": 8246
+    },
+    {
+      "path": "/www/cities.js",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/www/cities.js",
+      "sha256": "0a12bbffd7adc05cb8935d771c12a3fecf02e54ab72067f1dbd19c5efc1e938a",
+      "size": 9087
+    },
+    {
+      "path": "/www/dither.js",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/www/dither.js",
+      "sha256": "b6e1b88d8a97d5286eab6583ea7e18486b513429d3377d366f43c05ae1e3f3bf",
+      "size": 8385
+    },
+    {
+      "path": "/www/fonts.js",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/www/fonts.js",
+      "sha256": "2ac7a7ac97164bdbbc0bf6d9a477fd33653e2fd56e5ec8de90a492a4d9b35e8d",
+      "size": 11102
+    },
+    {
+      "path": "/www/icons.js",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/www/icons.js",
+      "sha256": "6a998ff481460923638861972e5d25f5215c775fd5c26cdc1329f016dc17aabc",
+      "size": 3894
+    },
+    {
+      "path": "/www/index.html",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/www/index.html",
+      "sha256": "cf32bcc9e95ad017f25cdbca1985fa99a415a6510441f4d9c9a26f5265fe2a38",
+      "size": 39039
+    },
+    {
+      "path": "/www/monster.png",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/www/monster.png",
+      "sha256": "10d9d32d7eb065916f5178c7bf89904430ccc438e25f6f6223d28593427312b8",
+      "size": 14429
+    },
+    {
+      "path": "/www/seal.png",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/www/seal.png",
+      "sha256": "0bdaa5741f3b71a076ad531f0c03692b6fc67e1fcf7d1bb6a0ad42a231fb301a",
+      "size": 14036
+    },
+    {
+      "path": "/www/style.css",
+      "url": "https://cdn.jsdelivr.net/gh/CY-flying/sweetfish-fw@main/assets/www/style.css",
+      "sha256": "5bb72dbec94c673e310628d2a068e9566be22b4f9ebf126a0e362e5fc8c374bd",
+      "size": 52561
     }
   ]
 }

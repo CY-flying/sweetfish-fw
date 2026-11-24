@@ -1,0 +1,45 @@
+{
+  "version": 3,
+  "name": "photo_with_info_portrait",
+  "canvas": [480, 800],
+  "rotate": 90,
+  "_note": "竖屏（设备左边缘朝下站立，rotate=90 顺时针落屏）。逻辑画布 480x800，照片铺满整幅（底部 40 行由信息条实心白盖住），信息条在逻辑底部 480x40，旋转后贴在物理左边缘——也就是人眼看到的底部。时间前的标记三态互斥：hour_odd 小水怪 / hour_even 印章（朱红）/ lowbat 空电池（优先）。",
+  "layers": [
+    { "type": "image", "id": "photo", "rect": [0, 0, 480, 800], "fit": "crop" },
+
+    { "type": "rect", "id": "bday_bg", "rect": [0, 732, 480, 28], "color": 1, "when": "bday" },
+    { "type": "rect", "id": "bday_rule", "rect": [0, 732, 480, 1], "color": 0, "when": "bday" },
+    { "type": "text", "id": "bday_text", "rect": [0, 733, 480, 27],
+      "font": "mono16", "color": 0, "align": "center", "valign": "middle",
+      "format": "HAPPY BIRTHDAY!", "when": "bday" },
+
+    { "type": "rect", "id": "bar",     "rect": [0, 760, 480, 40], "color": 1 },
+    { "type": "rect", "id": "divider", "rect": [0, 760, 480, 2],  "color": 0 },
+
+    { "type": "text", "id": "date", "rect": [12, 762, 124, 38],
+      "font": "mono16", "color": 0, "align": "left", "valign": "middle",
+      "format": "{YYYY}-{MM}-{DD} {WD}" },
+
+    { "type": "icon", "id": "mark_odd",  "rect": [196, 763, 33, 34],
+      "name": "monster", "color": 0, "when": "hour_odd" },
+    { "type": "icon", "id": "mark_even", "rect": [196, 763, 33, 34],
+      "name": "seal", "color": 3, "when": "hour_even" },
+    { "type": "icon", "id": "mark_bat",  "rect": [196, 763, 33, 34],
+      "name": "bat0", "color": 0, "when": "lowbat" },
+    { "type": "text", "id": "time", "rect": [235, 762, 44, 38],
+      "font": "mono24", "color": 0, "align": "left", "valign": "middle",
+      "format": "{HH}H" },
+
+    { "type": "icon", "id": "i_temp", "rect": [318, 768, 24, 24],
+      "name": "thermo", "color": 0 },
+    { "type": "text", "id": "temp", "rect": [348, 762, 52, 38],
+      "font": "mono16", "color": 0, "align": "left", "valign": "middle",
+      "format": "{T}C" },
+
+    { "type": "icon", "id": "i_hum", "rect": [408, 768, 24, 24],
+      "name": "drop", "color": 0 },
+    { "type": "text", "id": "hum", "rect": [438, 762, 32, 38],
+      "font": "mono16", "color": 0, "align": "right", "valign": "middle",
+      "format": "{H}%" }
+  ]
+}

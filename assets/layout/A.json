@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "name": "photo_full",
+  "canvas": [800, 480],
+  "layers": [
+    { "type": "image", "id": "photo", "rect": [0, 0, 800, 480], "fit": "crop" }
+  ]
+}

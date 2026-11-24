@@ -1,0 +1,41 @@
+/* cities.js —— 省市两级城市表（含港澳台），由 tools/gen_cities.py 生成，勿手改。
+ *
+ * 每一项都带着英文名和经纬度：英文名给固件做 geocoding 兜底，经纬度直接可用，
+ * 省掉一次网络请求。数据来自 Open-Meteo 的 geocoding 接口，逐个校验过能解析。
+ */
+var CN_CITIES = [
+  {p:"北京", c:[{n:"北京", en:"Beijing", lat:39.907, lon:116.397}]},
+  {p:"天津", c:[{n:"天津", en:"Tianjin", lat:39.142, lon:117.177}]},
+  {p:"河北", c:[{n:"石家庄", en:"Shijiazhuang", lat:38.041, lon:114.479}, {n:"唐山", en:"Tangshan", lat:39.644, lon:118.183}, {n:"秦皇岛", en:"Qinhuangdao", lat:39.941, lon:119.589}, {n:"保定", en:"Baoding", lat:38.873, lon:115.462}, {n:"邯郸", en:"Handan", lat:36.61, lon:114.488}, {n:"张家口", en:"Zhangjiakou", lat:40.783, lon:114.871}, {n:"承德", en:"Chengde", lat:40.952, lon:117.959}, {n:"廊坊", en:"Langfang", lat:39.521, lon:116.715}, {n:"沧州", en:"Cangzhou", lat:38.311, lon:116.853}, {n:"衡水", en:"Hengshui", lat:37.739, lon:115.683}]},
+  {p:"山西", c:[{n:"太原", en:"Taiyuan", lat:37.869, lon:112.56}, {n:"大同", en:"Datong", lat:40.094, lon:113.291}, {n:"长治", en:"Changzhi", lat:36.184, lon:113.105}, {n:"临汾", en:"Linfen", lat:36.089, lon:111.519}, {n:"运城", en:"Yuncheng", lat:35.023, lon:110.993}]},
+  {p:"内蒙古", c:[{n:"呼和浩特", en:"Hohhot", lat:40.811, lon:111.652}, {n:"包头", en:"Baotou", lat:40.652, lon:109.844}, {n:"鄂尔多斯", en:"Ordos", lat:39.609, lon:109.782}, {n:"赤峰", en:"Chifeng", lat:42.268, lon:118.964}, {n:"呼伦贝尔", en:"Hulunbuir", lat:49.211, lon:119.756}]},
+  {p:"辽宁", c:[{n:"沈阳", en:"Shenyang", lat:41.792, lon:123.433}, {n:"大连", en:"Dalian", lat:38.912, lon:121.602}, {n:"鞍山", en:"Anshan", lat:41.124, lon:122.99}, {n:"抚顺", en:"Fushun", lat:41.887, lon:123.944}, {n:"丹东", en:"Dandong", lat:40.129, lon:124.395}, {n:"锦州", en:"Jinzhou", lat:41.108, lon:121.142}]},
+  {p:"吉林", c:[{n:"长春", en:"Changchun", lat:43.88, lon:125.323}, {n:"吉林", en:"Jilin", lat:43.847, lon:126.561}, {n:"四平", en:"Siping", lat:43.161, lon:124.378}, {n:"延吉", en:"Yanji", lat:42.888, lon:129.502}]},
+  {p:"黑龙江", c:[{n:"哈尔滨", en:"Harbin", lat:45.75, lon:126.65}, {n:"齐齐哈尔", en:"Qiqihar", lat:47.339, lon:123.962}, {n:"牡丹江", en:"Mudanjiang", lat:44.548, lon:129.626}, {n:"大庆", en:"Daqing", lat:46.583, lon:125.0}]},
+  {p:"上海", c:[{n:"上海", en:"Shanghai", lat:31.222, lon:121.458}]},
+  {p:"江苏", c:[{n:"南京", en:"Nanjing", lat:32.062, lon:118.778}, {n:"无锡", en:"Wuxi", lat:31.569, lon:120.289}, {n:"徐州", en:"Xuzhou", lat:34.204, lon:117.284}, {n:"常州", en:"Changzhou", lat:31.774, lon:119.954}, {n:"苏州", en:"Suzhou", lat:33.636, lon:116.979}, {n:"南通", en:"Nantong", lat:32.03, lon:120.875}, {n:"扬州", en:"Yangzhou", lat:32.397, lon:119.436}, {n:"盐城", en:"Yancheng", lat:33.358, lon:120.157}]},
+  {p:"浙江", c:[{n:"杭州", en:"Hangzhou", lat:30.294, lon:120.161}, {n:"宁波", en:"Ningbo", lat:29.878, lon:121.549}, {n:"温州", en:"Wenzhou", lat:27.999, lon:120.667}, {n:"嘉兴", en:"Jiaxing", lat:30.752, lon:120.75}, {n:"绍兴", en:"Shaoxing", lat:30.002, lon:120.579}, {n:"金华", en:"Jinhua", lat:29.107, lon:119.644}, {n:"台州", en:"Taizhou", lat:28.663, lon:121.433}]},
+  {p:"安徽", c:[{n:"合肥", en:"Hefei", lat:31.864, lon:117.281}, {n:"芜湖", en:"Wuhu", lat:31.353, lon:118.429}, {n:"蚌埠", en:"Bengbu", lat:32.941, lon:117.361}, {n:"安庆", en:"Anqing", lat:30.514, lon:117.047}, {n:"黄山", en:"Huangshan", lat:29.711, lon:118.312}]},
+  {p:"福建", c:[{n:"福州", en:"Fuzhou", lat:26.061, lon:119.306}, {n:"厦门", en:"Xiamen", lat:24.48, lon:118.082}, {n:"泉州", en:"Quanzhou", lat:24.914, lon:118.586}, {n:"漳州", en:"Zhangzhou", lat:24.513, lon:117.656}, {n:"莆田", en:"Putian", lat:25.439, lon:119.01}]},
+  {p:"江西", c:[{n:"南昌", en:"Nanchang", lat:28.684, lon:115.853}, {n:"九江", en:"Jiujiang", lat:29.705, lon:116.002}, {n:"赣州", en:"Ganzhou", lat:25.847, lon:114.933}, {n:"景德镇", en:"Jingdezhen", lat:29.295, lon:117.208}]},
+  {p:"山东", c:[{n:"济南", en:"Jinan", lat:36.668, lon:116.997}, {n:"青岛", en:"Qingdao", lat:36.065, lon:120.38}, {n:"烟台", en:"Yantai", lat:37.476, lon:121.441}, {n:"潍坊", en:"Weifang", lat:36.71, lon:119.102}, {n:"临沂", en:"Linyi", lat:35.063, lon:118.343}, {n:"淄博", en:"Zibo", lat:36.791, lon:118.063}, {n:"威海", en:"Weihai", lat:37.509, lon:122.114}]},
+  {p:"河南", c:[{n:"郑州", en:"Zhengzhou", lat:34.758, lon:113.649}, {n:"洛阳", en:"Luoyang", lat:34.673, lon:112.437}, {n:"开封", en:"Kaifeng", lat:34.799, lon:114.307}, {n:"新乡", en:"Xinxiang", lat:35.19, lon:113.802}, {n:"南阳", en:"Nanyang", lat:33.005, lon:112.547}, {n:"安阳", en:"Anyang", lat:36.096, lon:114.383}]},
+  {p:"湖北", c:[{n:"武汉", en:"Wuhan", lat:30.583, lon:114.267}, {n:"宜昌", en:"Yichang", lat:30.714, lon:111.285}, {n:"襄阳", en:"Xiangyang", lat:32.042, lon:112.145}, {n:"荆州", en:"Jingzhou", lat:30.35, lon:112.19}, {n:"十堰", en:"Shiyan", lat:32.648, lon:110.778}]},
+  {p:"湖南", c:[{n:"长沙", en:"Changsha", lat:28.199, lon:112.971}, {n:"株洲", en:"Zhuzhou", lat:27.833, lon:113.15}, {n:"湘潭", en:"Xiangtan", lat:27.85, lon:112.9}, {n:"衡阳", en:"Hengyang", lat:26.889, lon:112.619}, {n:"岳阳", en:"Yueyang", lat:29.375, lon:113.095}, {n:"常德", en:"Changde", lat:29.032, lon:111.698}, {n:"张家界", en:"Zhangjiajie", lat:29.129, lon:110.478}]},
+  {p:"广东", c:[{n:"广州", en:"Guangzhou", lat:23.117, lon:113.25}, {n:"深圳", en:"Shenzhen", lat:22.546, lon:114.068}, {n:"珠海", en:"Zhuhai", lat:22.277, lon:113.568}, {n:"佛山", en:"Foshan", lat:23.027, lon:113.131}, {n:"东莞", en:"Dongguan", lat:23.018, lon:113.749}, {n:"中山", en:"Zhongshan", lat:22.523, lon:113.379}, {n:"惠州", en:"Huizhou", lat:23.111, lon:114.415}, {n:"汕头", en:"Shantou", lat:23.355, lon:116.679}, {n:"湛江", en:"Zhanjiang", lat:21.234, lon:110.387}, {n:"江门", en:"Jiangmen", lat:22.583, lon:113.083}]},
+  {p:"广西", c:[{n:"南宁", en:"Nanning", lat:22.817, lon:108.317}, {n:"桂林", en:"Guilin", lat:25.28, lon:110.296}, {n:"柳州", en:"Liuzhou", lat:24.324, lon:109.407}, {n:"北海", en:"Beihai", lat:21.483, lon:109.115}]},
+  {p:"海南", c:[{n:"海口", en:"Haikou", lat:20.034, lon:110.347}, {n:"三亚", en:"Sanya", lat:18.254, lon:109.509}, {n:"儋州", en:"Danzhou", lat:19.521, lon:109.579}]},
+  {p:"重庆", c:[{n:"重庆", en:"Chongqing", lat:29.56, lon:106.558}]},
+  {p:"四川", c:[{n:"成都", en:"Chengdu", lat:30.667, lon:104.067}, {n:"绵阳", en:"Mianyang", lat:31.468, lon:104.682}, {n:"德阳", en:"Deyang", lat:31.13, lon:104.382}, {n:"宜宾", en:"Yibin", lat:28.759, lon:104.64}, {n:"乐山", en:"Leshan", lat:29.562, lon:103.764}, {n:"泸州", en:"Luzhou", lat:28.89, lon:105.426}]},
+  {p:"贵州", c:[{n:"贵阳", en:"Guiyang", lat:26.583, lon:106.717}, {n:"遵义", en:"Zunyi", lat:27.687, lon:106.907}, {n:"六盘水", en:"Liupanshui", lat:26.594, lon:104.833}]},
+  {p:"云南", c:[{n:"昆明", en:"Kunming", lat:25.039, lon:102.718}, {n:"大理", en:"Dali", lat:25.585, lon:100.212}, {n:"丽江", en:"Lijiang", lat:26.869, lon:100.221}, {n:"曲靖", en:"Qujing", lat:25.483, lon:103.783}, {n:"西双版纳", en:"Xishuangbanna", lat:22.003, lon:100.803}]},
+  {p:"西藏", c:[{n:"拉萨", en:"Lhasa", lat:29.65, lon:91.1}, {n:"日喀则", en:"Shigatse", lat:29.352, lon:89.31}, {n:"林芝", en:"Nyingchi", lat:29.649, lon:94.355}]},
+  {p:"陕西", c:[{n:"西安", en:"Xi'an", lat:34.258, lon:108.929}, {n:"宝鸡", en:"Baoji", lat:34.368, lon:107.237}, {n:"咸阳", en:"Xianyang", lat:34.338, lon:108.703}, {n:"延安", en:"Yan'an", lat:36.599, lon:109.492}]},
+  {p:"甘肃", c:[{n:"兰州", en:"Lanzhou", lat:36.057, lon:103.84}, {n:"天水", en:"Tianshui", lat:34.58, lon:105.742}, {n:"敦煌", en:"Dunhuang", lat:40.167, lon:94.683}]},
+  {p:"青海", c:[{n:"西宁", en:"Xining", lat:36.626, lon:101.757}, {n:"格尔木", en:"Golmud", lat:36.429, lon:94.825}]},
+  {p:"宁夏", c:[{n:"银川", en:"Yinchuan", lat:38.468, lon:106.273}, {n:"石嘴山", en:"Shizuishan", lat:38.981, lon:106.389}]},
+  {p:"新疆", c:[{n:"乌鲁木齐", en:"Urumqi", lat:43.801, lon:87.6}, {n:"喀什", en:"Kashgar", lat:39.467, lon:75.987}, {n:"伊宁", en:"Yining", lat:43.915, lon:81.322}, {n:"克拉玛依", en:"Karamay", lat:45.585, lon:84.887}]},
+  {p:"香港", c:[{n:"香港", en:"Hong Kong", lat:22.278, lon:114.175}, {n:"九龙", en:"Kowloon", lat:22.317, lon:114.183}]},
+  {p:"澳门", c:[{n:"澳门", en:"Macau", lat:22.201, lon:113.546}]},
+  {p:"台湾", c:[{n:"台北", en:"Taipei", lat:25.053, lon:121.526}, {n:"新北", en:"New Taipei", lat:25.062, lon:121.457}, {n:"桃园", en:"Taoyuan", lat:24.994, lon:121.297}, {n:"台中", en:"Taichung", lat:24.147, lon:120.684}, {n:"台南", en:"Tainan", lat:22.993, lon:120.205}, {n:"高雄", en:"Kaohsiung", lat:22.616, lon:120.313}, {n:"花莲", en:"Hualien", lat:23.977, lon:121.604}]},
+];

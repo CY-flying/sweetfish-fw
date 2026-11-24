@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4f3ee">
+<title>銜玉珍函 · SWEETFISH ALBUM</title>
+<link rel="icon" href="seal.png?v=3">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<svg class="svg-sprite" aria-hidden="true">
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="8.5" cy="9" r="1.5"/><path d="m4 17 5-5 4 4 2-2 5 5"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.83 2.83-.06-.06a1.7 1.7 0 0 0-1.88-.34 1.7 1.7 0 0 0-1.03 1.56V21h-4v-.08A1.7 1.7 0 0 0 8.96 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06-2.83-2.83.06-.06A1.7 1.7 0 0 0 4.6 15 1.7 1.7 0 0 0 3.08 14H3v-4h.08A1.7 1.7 0 0 0 4.6 8.96a1.7 1.7 0 0 0-.34-1.88l-.06-.06 2.83-2.83.06.06A1.7 1.7 0 0 0 9 4.6 1.7 1.7 0 0 0 10 3.08V3h4v.08A1.7 1.7 0 0 0 15.04 4.6a1.7 1.7 0 0 0 1.88-.34l.06.06 2.83 2.83-.06.06A1.7 1.7 0 0 0 19.4 9c.16.6.7 1 1.52 1H21v4h-.08c-.82 0-1.36.42-1.52 1Z"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l2-2a5 5 0 0 0-7.07-7.07l-1.15 1.15M14 11a5 5 0 0 0-7.54-.54l-2 2a5 5 0 0 0 7.07 7.07l1.15-1.15"/></symbol>
+  <symbol id="i-ai" viewBox="0 0 24 24"><path d="M12 3l1.8 4.6L18.4 9.4 13.8 11.2 12 15.8 10.2 11.2 5.6 9.4 10.2 7.6Z"/><path d="M18 15l.9 2.1L21 18l-2.1.9L18 21l-.9-2.1L15 18l2.1-.9Z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-thermo" viewBox="0 0 24 24"><path d="M10 13.5V5a2 2 0 1 1 4 0v8.5a4 4 0 1 1-4 0Z"/><path d="M12 9v6"/></symbol>
+  <symbol id="i-speaker" viewBox="0 0 24 24"><path d="M4 10v4h3l5 4V6L7 10H4Z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></symbol>
+  <symbol id="i-music" viewBox="0 0 24 24"><circle cx="7" cy="18" r="2.4"/><circle cx="18" cy="16" r="2.4"/><path d="M9.4 18V7l11-2v9"/></symbol>
+  <symbol id="i-battery" viewBox="0 0 24 24"><rect x="2" y="8" width="17" height="9" rx="2"/><path d="M21 11v3"/><rect x="4.5" y="10.5" width="8" height="4" rx="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-firmware" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v2M14 3v2M10 19v2M14 19v2M3 10h2M3 14h2M19 10h2M19 14h2"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 8a7 7 0 0 1 11.5-1L20 12M4 12l2.4 5a7 7 0 0 0 11.5-1"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M3 8.5a14 14 0 0 1 18 0M6.5 12a9 9 0 0 1 11 0M10 15.5a4 4 0 0 1 4 0"/><circle cx="12" cy="19" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-display" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></symbol>
+</svg>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark"><img class="logo" src="seal.png?v=3" alt="銜玉珍函"></div>
+      <div class="brand-copy"><h1>銜玉珍函</h1><p>SweetFish Album</p></div>
+    </div>
+    <nav class="tabs" aria-label="控制台导航" role="tablist">
+      <button class="tab active" id="navUpload" data-tab="upload" role="tab" aria-selected="true" aria-controls="tab-upload"><svg><use href="#i-image"></use></svg><span>创作与上屏</span><i class="tab-dot"></i></button>
+      <button class="tab" id="navGallery" data-tab="gallery" role="tab" aria-selected="false" aria-controls="tab-gallery" tabindex="-1"><svg><use href="#i-grid"></use></svg><span>相册管理</span><i class="tab-dot"></i></button>
+      <button class="tab" id="navFiles" data-tab="files" role="tab" aria-selected="false" aria-controls="tab-files" tabindex="-1"><svg><use href="#i-folder"></use></svg><span>文件管理</span><i class="tab-dot"></i></button>
+      <button class="tab" id="navSettings" data-tab="settings" role="tab" aria-selected="false" aria-controls="tab-settings" tabindex="-1"><svg><use href="#i-settings"></use></svg><span>设备设置</span><i class="tab-dot"></i></button>
+    </nav>
+    <div class="sidebar-bottom">
+      <button class="monster" id="monsterBuddy" type="button" aria-label="水怪，祝你天天开心">
+        <span class="monster-face"><img src="monster.png?v=2" alt="" draggable="false"><span class="monster-bubble" aria-hidden="true">Hi</span></span>
+        <span class="monster-line">祝你天天开心</span>
+      </button>
+    </div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <div class="page-heading"><h2 id="pageTitle">创作与上屏</h2></div>
+      <div class="top-actions">
+        <div class="status" aria-label="设备状态摘要">
+          <span class="pill" id="pillConn"><i></i><span id="pillText">离线模式</span></span>
+          <span class="stat"><b id="statBatt">—</b><em>电池</em></span>
+          <span class="stat"><b id="statAwake">—</b><em>服务窗口</em></span>
+          <span class="stat stat-ip"><b id="statIp">—</b><em>设备地址</em></span>
+        </div>
+        <button class="btn connect-btn" id="btnConnect" type="button"><svg><use href="#i-link"></use></svg>连接设备</button>
+      </div>
+    </header>
+    <main>
+      <div class="banner warn" id="captiveHint" hidden><span class="banner-icon"><svg><use href="#i-info"></use></svg></span><div><strong>如果点「上传照片」没反应，说明这个页面开在系统的「联网检测」窗口里，它没有文件选择器。</strong>把下面的地址复制出来，粘到手机浏览器里打开就能正常上传。<div class="actions" style="margin-top:8px"><code id="portalAddr">http://192.168.4.1/app</code><button class="btn ghost sm" id="btnCopyPortal" type="button">复制地址</button></div></div></div>
+      <section id="tab-upload" class="panel active" role="tabpanel" aria-labelledby="navUpload">
+        <div class="batch-progress" id="batchProgress" hidden>
+          <div class="batch-meta"><span id="batchText">准备批量上传</span><button class="text-btn" id="btnBatchCancel" type="button">取消</button></div>
+          <div class="bar-track"><i class="bar-fill" id="batchBar"></i></div>
+        </div>
+        <div class="editor">
+          <div class="card crop-card">
+            <div class="card-head">
+              <h2>创作预览</h2>
+              <div class="card-head-actions"><span class="soft-badge" id="ratioNote">输出 800 × 480</span><button class="btn ghost sm" id="btnBatchUpload" type="button"><svg><use href="#i-upload"></use></svg>批量上传</button></div>
+            </div>
+            <div class="seg-row"><div class="seg" id="cropOrient" aria-label="裁剪方向"><button type="button" class="sel" data-orient="auto">自动</button><button type="button" data-orient="landscape">横向</button><button type="button" data-orient="portrait">竖向</button></div><span class="field-note" id="orientHint"></span></div>
+            <div class="crop-mode-row">
+              <div class="seg" id="cropMode" aria-label="裁剪模式"><button type="button" class="sel" data-crop-mode="fit" aria-pressed="true">屏幕比例</button><button type="button" data-crop-mode="free" aria-pressed="false">自由比例</button></div>
+              <div class="fill-control" id="fillControl" hidden><span>填充</span><div class="seg fill-seg" id="fillPick"><button type="button" class="sel" data-fill="white" aria-pressed="true"><i class="fill-swatch white"></i>白色</button><button type="button" data-fill="black" aria-pressed="false"><i class="fill-swatch black"></i>黑色</button></div></div>
+            </div>
+            <div class="crop-split">
+              <div class="crop-col">
+                <div class="crop-wrap" id="cropWrap">
+                  <canvas id="cropCanvas" width="760" height="456" aria-label="照片裁剪画布"></canvas>
+                  <div class="dropzone" id="dropzone"><div class="dz-icon"><svg><use href="#i-upload"></use></svg></div><h3>选择或拖入照片</h3><button class="btn ghost" id="btnPick" type="button">选择照片</button></div>
+                </div>
+                <div class="crop-foot"><span id="cropReadout">等待载入照片</span><button class="btn ghost" id="btnPick2" type="button">更换照片</button></div>
+              </div>
+              <div class="preview-col">
+                <div class="sub-head"><h3>预览</h3><span class="val" id="metaPixels">800 × 480</span></div>
+                <div class="preview-frame" id="previewFrame"><canvas id="previewCanvas" width="800" height="480" aria-label="创作预览画布"></canvas><div class="preview-empty" id="previewEmpty"><img src="seal.png?v=3" alt=""><strong>等待选择图片</strong></div></div>
+              </div>
+            </div>
+            <input type="file" id="fileInput" accept="image/*" hidden>
+            <input type="file" id="folderInput" accept="image/*" webkitdirectory directory multiple hidden>
+
+            <div class="tune-head" id="tuneHead" role="button" tabindex="0" aria-expanded="false" aria-controls="tuneFields"><h3><svg class="tune-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>色彩与质感</h3><button class="text-btn" id="btnResetTune" type="button">恢复默认</button></div>
+            <div class="tune-fields" id="tuneFields" hidden>
+              <div class="field"><label for="optAlgo">抖动算法</label><select id="optAlgo"><option value="fs">细腻扩散 · 层次最丰富</option><option value="sierra">轻柔扩散 · 噪点最少</option><option value="bayer">规则网点 · 边缘锐利</option><option value="none">不抖动 · 色块平实</option></select></div>
+              <div class="field"><label for="optStrength">误差强度 <span class="val" id="valStrength">1.00</span></label><input type="range" id="optStrength" min="0" max="1.5" step="0.05" value="1"></div>
+              <div class="field"><label for="optSat">饱和度 <span class="val" id="valSat">+8%</span></label><input type="range" id="optSat" min="-40" max="60" step="2" value="8"></div>
+              <div class="field"><label for="optContrast">对比度 <span class="val" id="valContrast">+4%</span></label><input type="range" id="optContrast" min="-30" max="40" step="2" value="4"></div>
+            </div>
+            <div class="bar-wrap" id="singleProg" hidden><div class="bar-track"><i class="bar-fill" id="singleBar"></i></div><div class="bar-meta"><span id="singlePhase">准备上传</span><span id="singlePct">0%</span></div></div>
+            <div class="publish-box"><div class="actions"><button class="btn ghost" id="btnSaveOnly" type="button" disabled>仅存入相册</button><button class="btn primary-action big" id="btnUpload" type="button" disabled>上传并上屏</button></div></div>
+          </div>
+          <div class="editor-side">
+            <div class="card preview-card">
+              <div class="card-head"><h2>屏幕显示</h2></div>
+              <div class="preview-frame" id="devFrame"><canvas id="devCanvas" width="800" height="480" aria-label="屏幕当前画面"></canvas><div class="preview-empty" id="devEmpty"><img src="seal.png?v=3" alt=""><strong>未连接设备</strong></div></div>
+              <div class="preview-meta"><span id="devMeta">—</span></div>
+            </div>
+            <div class="card preview-card">
+              <div class="card-head"><h2>版式</h2></div>
+              <div class="preview-options">
+                <div class="field"><label>布局</label><div class="layout-pick" id="layoutPick">
+                  <button class="lp" type="button" data-layout="A" aria-pressed="false"><svg viewBox="0 0 100 60"><rect x="1" y="1" width="98" height="58" rx="2" fill="#eeeae2" stroke="#d7d2c9"/><path d="M14 44 34 24 48 38 62 20 86 44Z" fill="#6f7771"/><circle cx="70" cy="18" r="6" fill="#d1a938"/></svg><span>纯照片</span></button>
+                  <button class="lp sel" type="button" data-layout="B" aria-pressed="true"><svg viewBox="0 0 100 60"><rect x="1" y="1" width="98" height="58" rx="2" fill="#eeeae2" stroke="#d7d2c9"/><path d="M12 44 30 22 42 36 56 18 76 44Z" fill="#6f7771"/><rect x="1" y="54" width="98" height="5" fill="#fff"/><path d="M4 57h17m20-1v2m4-2h9m21-1v2m4-1h6m4-1v2m4-1h5" stroke="#30342f" stroke-width="1.5"/></svg><span>照片 + 信息</span></button>
+                  <button class="lp" type="button" data-layout="C" aria-pressed="false"><svg viewBox="0 0 100 60"><rect x="1" y="1" width="98" height="58" rx="2" fill="#fff" stroke="#d7d2c9"/><rect x="10" y="14" width="50" height="16" fill="#30342f"/><rect x="66" y="22" width="16" height="8" fill="#b84b38"/><rect x="10" y="36" width="40" height="14" fill="#4f6b79"/><rect x="10" y="54" width="70" height="2" fill="#30342f"/></svg><span>工作台</span></button>
+                </div></div>
+                <div class="field"><label>屏幕方向</label><div class="seg wide" id="orientPick"><button type="button" data-orient="landscape">横放</button><button type="button" data-orient="portrait_r">正立</button></div></div>
+                <div class="field" id="barThemeField"><label>信息栏</label><div class="seg wide" id="barTheme"><button type="button" class="sel" data-bar-theme="white" aria-pressed="true"><i class="fill-swatch white"></i>白底</button><button type="button" data-bar-theme="black" aria-pressed="false"><i class="fill-swatch black"></i>黑底</button></div></div>
+                <div class="field" id="wbThemeField"><label>工作台配色</label><div class="seg wide" id="wbTheme"><button type="button" class="sel" data-wb-theme="day" aria-pressed="true">白天</button><button type="button" data-wb-theme="night" aria-pressed="false">黑夜</button></div></div>
+                <div class="actions display-actions"><button class="btn ghost" id="btnSaveDisplayCfg" type="button">保存</button><button class="btn" id="btnApplyDisplay" type="button">保存并刷新</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tab-gallery" class="panel" role="tabpanel" aria-labelledby="navGallery" hidden>
+        <div class="card gallery-card">
+          <div class="card-head gallery-head"><h2>SD 卡相册</h2><button class="btn ghost sm" id="btnReloadGallery" type="button"><svg><use href="#i-refresh"></use></svg>刷新</button></div>
+          <div class="album-toolbar"><div class="seg album-seg" id="galleryOrient" aria-label="选择相册"><button type="button" class="sel" data-gallery-orient="landscape">横屏 <span id="galleryLandCount">—</span></button><button type="button" data-gallery-orient="portrait">竖屏 <span id="galleryPortraitCount">—</span></button></div><span class="gallery-stat" id="galleryStat">—</span></div>
+          <div class="album-select" id="albumSelect"><span class="sel-count" id="selCount">未选中</span><button class="btn ghost sm" id="btnSelAll" type="button">全选</button><button class="btn ghost sm" id="btnDownloadSel" type="button" disabled>下载</button><button class="btn danger sm" id="btnDeleteSel" type="button" disabled>删除</button></div>
+          <div class="gallery list" id="galleryGrid" aria-live="polite"></div>
+          <div class="empty" id="galleryEmpty" hidden><div class="empty-icon"><svg><use href="#i-image"></use></svg></div><h3>暂无照片</h3><button class="btn ghost" id="btnEmptyUpload" type="button">上传照片</button></div>
+          <nav class="gallery-pager" id="galleryPager" aria-label="相册分页" hidden><button class="btn ghost sm" id="galleryPrev" type="button">上一页</button><span id="galleryPageText" aria-live="polite">1 / 1</span><button class="btn ghost sm" id="galleryNext" type="button">下一页</button></nav>
+        </div>
+      </section>
+      <section id="tab-files" class="panel" role="tabpanel" aria-labelledby="navFiles" hidden>
+        <div class="card">
+          <div class="card-head gallery-head"><h2>SD 卡文件</h2>
+            <div class="card-head-actions">
+              <button class="btn ghost sm" id="btnFsUp" type="button">上一级</button>
+              <button class="btn ghost sm" id="btnFsReload" type="button"><svg><use href="#i-refresh"></use></svg>刷新</button>
+              <label class="btn ghost sm" for="fsUpload" role="button">上传到此处</label>
+              <input type="file" id="fsUpload" multiple class="sr-only">
+            </div>
+          </div>
+          <p class="fs-path" id="fsPath">/</p>
+          <div class="bar-wrap" id="fsProg" hidden><div class="bar-track"><i class="bar-fill" id="fsBar"></i></div><div class="bar-meta"><span id="fsPhase">准备上传</span><span id="fsPct">0%</span></div></div>
+          <div class="fs-list" id="fsList"></div>
+        </div>
+      </section>
+      <section id="tab-settings" class="panel" role="tabpanel" aria-labelledby="navSettings" hidden>
+        <div class="settings-grid">
+          <div class="card setting-card">
+            <div class="card-head"><div class="setting-title"><span class="setting-icon"><svg><use href="#i-wifi"></use></svg></span><h2>网络连接</h2></div></div>
+            <div class="conn-now" id="connNow" hidden>
+              <dl class="kv"><dt>当前 WiFi</dt><dd id="connSsid">—</dd><dt>局域网地址</dt><dd id="connIp">—</dd><dt>信号强度</dt><dd id="connRssi">—</dd></dl>
+            </div>
+            <div id="wifiManual">
+              <div class="field"><label>周边 WiFi <span class="val" id="scanHint"></span></label><div class="scan-bar"><button class="btn ghost sm" id="btnScan" type="button">扫描网络</button></div><div class="scan-list" id="scanList" hidden></div></div>
+              <div class="field"><label for="setSsid">WiFi 名称（SSID）</label><input type="text" id="setSsid" placeholder="WiFi 名称" autocomplete="off"></div>
+              <div class="field"><label for="setPass">密码</label><div class="input-action"><input type="password" id="setPass" placeholder="开放网络可留空" autocomplete="new-password"><button id="btnTogglePass" type="button" aria-label="显示密码"><svg><use href="#i-eye"></use></svg></button></div></div>
+              <div class="actions"><button class="btn" id="btnSaveWifi" type="button">保存并连接</button></div>
+            </div>
+            <div class="banner info compact"><span class="banner-icon"><svg><use href="#i-info"></use></svg></span><div id="wifiHint">连接网络后，可通过局域网访问管理相册，并获取在线服务。</div></div>
+            <div class="actions" id="wifiChangeRow" hidden><button class="btn ghost" id="btnChangeWifi" type="button">更换网络</button></div>
+          </div>
+          <div class="card setting-card">
+            <div class="card-head"><div class="setting-title"><span class="setting-icon"><svg><use href="#i-refresh"></use></svg></span><h2>刷新计划</h2></div></div>
+            <div class="field"><label for="setInterval">定时刷新</label><select id="setInterval"><option value="0">关闭</option><option value="30">每 30 分钟</option><option value="60" selected>每 1 小时</option><option value="120">每 2 小时</option><option value="180">每 3 小时</option></select></div>
+            <div class="field"><label for="setNetEvery">在线服务刷新</label><select id="setNetEvery"><option value="360">每 6 小时</option><option value="720">每 12 小时</option><option value="1440" selected>每 1 天</option><option value="4320">每 3 天</option></select></div>
+            <div class="switch-row"><span>免打扰时段</span><label class="switch"><input type="checkbox" id="setDndOn" checked><i></i></label></div>
+            <div class="row2 dnd-times"><div class="field"><label for="setDndStart">开始</label><input type="time" id="setDndStart" value="03:00"></div><div class="field"><label for="setDndEnd">结束</label><input type="time" id="setDndEnd" value="08:00"></div></div>
+            <div class="field"><label>照片刷新方式</label>
+              <div class="seg wide" id="setPhotoMode"><button type="button" class="sel" data-photo-mode="cycle">列表循环</button><button type="button" data-photo-mode="fixed">固定单张</button><button type="button" data-photo-mode="random">随机</button></div>
+            </div>
+            <div class="field" id="photoFixedField" hidden><label for="setPhotoFixed">固定显示哪一张</label><select id="setPhotoFixed"><option value="">（先加载相册）</option></select></div>
+            <div class="actions"><button class="btn" id="btnSaveDisplay" type="button">保存设置</button></div>
+          </div>
+          <div class="card setting-card">
+            <div class="card-head"><div class="setting-title"><span class="setting-icon"><svg><use href="#i-sun"></use></svg></span><h2>天气</h2></div></div>
+            <div class="switch-row"><span>自动定位</span><label class="switch"><input type="checkbox" id="setWxAuto" checked><i></i></label></div>
+            <p class="field-note" id="wxPlaceNote">定位到 —</p>
+            <div class="field" id="wxManualField" hidden><label>城市<span class="val" id="wxPickLabel">未选择</span></label>
+              <div class="row2"><select id="setWxProv" aria-label="省份"></select><select id="setWxCity" aria-label="城市"></select></div>
+
+            </div>
+            <div class="actions"><button class="btn ghost sm" id="btnSaveWx" type="button">保存设置</button></div>
+          </div>
+          <div class="card setting-card">
+            <div class="card-head"><div class="setting-title"><span class="setting-icon"><svg><use href="#i-thermo"></use></svg></span><h2>传感器</h2></div></div>
+            <div class="status-group"><h3>当前读数</h3><dl class="kv"><dt>传感器原始</dt><dd id="sensRaw">—</dd><dt>补偿后</dt><dd id="sensAdj">—</dd></dl></div>
+            <div class="field"><label>机身传感器校准</label>
+              <div class="row2"><div class="field"><label for="setTempOff">温度补偿（℃）<span class="val">±2</span></label><input type="number" id="setTempOff" step="0.1" min="-2" max="2" placeholder="0.0" inputmode="decimal"></div><div class="field"><label for="setHumOff">湿度补偿（%）<span class="val">±15</span></label><input type="number" id="setHumOff" step="1" min="-15" max="15" placeholder="0" inputmode="numeric"></div></div>
+            </div>
+            <div class="actions"><button class="btn ghost sm" id="btnSaveBody" type="button">保存</button></div>
+          </div>
+          <div class="card setting-card">
+            <div class="card-head"><div class="setting-title"><span class="setting-icon"><svg><use href="#i-speaker"></use></svg></span><h2>提示音</h2></div></div>
+            <div class="switch-row"><span>提示音</span><label class="switch"><input type="checkbox" id="setBeep" checked><i></i></label></div>
+            <div class="field" id="volField"><label for="setVolume">音量 <span class="val" id="volVal">60%</span></label><input type="range" id="setVolume" min="0" max="100" step="10" value="60"></div>
+            <div class="field"><label>通知项</label>
+              <div class="beep-groups">
+                <label class="chk"><input type="checkbox" id="beepPower" data-bit="1" checked><span>开关机</span></label>
+                <label class="chk"><input type="checkbox" id="beepRefresh" data-bit="2" checked><span>日常刷新</span></label>
+                <label class="chk"><input type="checkbox" id="beepStatus" data-bit="4" checked><span>设备状态</span></label>
+                <label class="chk"><input type="checkbox" id="beepOta" data-bit="8" checked><span>升级与出错</span></label>
+                <label class="chk"><input type="checkbox" id="beepMusic" data-bit="16" checked><span>音乐与免打扰</span></label>
+              </div>
+            </div>
+            <div class="field"><label for="setSoundPack">语音包</label><select id="setSoundPack"><option value="default">default（出厂）</option></select></div>
+            <div class="actions"><button class="btn ghost sm" id="btnBeepPreview" type="button">试听</button><button class="btn ghost sm" id="btnSaveBeep" type="button">保存设置</button></div>
+          </div>
+          <div class="card setting-card">
+            <div class="card-head"><div class="setting-title"><span class="setting-icon"><svg><use href="#i-music"></use></svg></span><h2>音乐</h2></div></div>
+            <div class="field"><label>播放模式</label><div class="seg wide" id="musicMode"><button type="button" class="sel" data-mode="0">列表循环</button><button type="button" data-mode="1">单曲循环</button><button type="button" data-mode="2">随机播放</button><button type="button" data-mode="3">顺序播放</button></div></div>
+            <div class="field"><label>当前曲目 <span class="val" id="musicNow">—</span></label>
+              <div class="actions"><button class="btn ghost sm" id="btnMusicReload" type="button">读取音乐库</button><label class="btn ghost sm" id="btnMusicUpload" for="musicFile" role="button">上传音乐</label></div>
+              <input type="file" id="musicFile" accept="audio/*,.wav,.mp3" multiple class="sr-only">
+              <div class="bar-wrap" id="musicProg" hidden><div class="bar-track"><i class="bar-fill" id="musicBar"></i></div><div class="bar-meta"><span id="musicPhase">准备上传</span><span id="musicPct">0%</span></div></div>
+              <div class="music-list" id="musicList"></div>
+            </div>
+            <div class="actions"><button class="btn ghost sm" id="btnSaveMusic" type="button">保存音乐设置</button></div>
+          </div>
+          <div class="card setting-card">
+            <div class="card-head"><div class="setting-title"><span class="setting-icon"><svg><use href="#i-clock"></use></svg></span><h2>设备时间</h2></div></div>
+            <div class="field"><label>设备当前时间 <span class="val" id="devTime">—</span></label><div class="dt-row" id="timeRow">
+              <div class="dt-cell"><input type="number" id="tYear" inputmode="numeric" min="2000" max="2099" placeholder="2026" aria-label="年"><label>年</label></div><div class="dt-sep">−</div><div class="dt-cell"><input type="number" id="tMon" inputmode="numeric" min="1" max="12" placeholder="11" aria-label="月"><label>月</label></div><div class="dt-sep">−</div><div class="dt-cell"><input type="number" id="tDay" inputmode="numeric" min="1" max="31" placeholder="17" aria-label="日"><label>日</label></div><div class="dt-gap"></div>
+              <div class="dt-cell"><input type="number" id="tHour" inputmode="numeric" min="0" max="23" placeholder="09" aria-label="时"><label>时</label></div><div class="dt-sep">:</div><div class="dt-cell"><input type="number" id="tMin" inputmode="numeric" min="0" max="59" placeholder="41" aria-label="分"><label>分</label></div><div class="dt-sep">:</div><div class="dt-cell"><input type="number" id="tSec" inputmode="numeric" min="0" max="59" placeholder="00" aria-label="秒"><label>秒</label></div>
+            </div></div>
+            <div class="switch-row"><span>在线对时</span><label class="switch"><input type="checkbox" id="setNtp" checked><i></i></label></div>
+            <div class="actions wrap-actions"><button class="btn ghost" id="btnFillLocal" type="button">本机时间</button><button class="btn" id="btnSyncTime" type="button">保存</button></div>
+          </div>
+          <div class="card setting-card">
+            <div class="card-head"><div class="setting-title"><span class="setting-icon"><svg><use href="#i-battery"></use></svg></span><h2>运行状态</h2></div></div>
+            <div class="status-group"><h3>设备信息</h3><dl class="kv"><dt>序列号</dt><dd id="infoSn">—</dd><dt>固件版本</dt><dd id="infoFw">—</dd><dt>运行模式</dt><dd id="infoMode">—</dd><dt>电池电压</dt><dd id="infoBatt">—</dd></dl></div>
+            <div class="status-group"><h3>储存</h3><dl class="kv"><dt>SD 已用 / 总量</dt><dd id="infoSd">—</dd><dt>照片数量</dt><dd id="infoCount">—</dd><dt>音乐数量</dt><dd id="infoMusic">—</dd></dl></div>
+            <div class="status-group"><h3>网络</h3><dl class="kv"><dt>连接状态</dt><dd id="infoWifi">—</dd><dt>局域网地址</dt><dd id="infoIp">—</dd><dt>信号强度</dt><dd id="infoRssi">—</dd></dl></div>
+            <div class="status-group"><h3>刷新</h3><dl class="kv"><dt>上次刷新</dt><dd id="infoLast">—</dd><dt>下次唤醒</dt><dd id="infoNext">—</dd></dl></div>
+                        <div class="actions"><button class="btn ghost" id="btnRefreshNow" type="button"><svg><use href="#i-refresh"></use></svg>立即刷新屏幕</button><button class="btn ghost" id="btnSleep" type="button">设备休眠</button></div>
+          </div>
+          <div class="card setting-card ai-card">
+            <div class="card-head"><div class="setting-title"><span class="setting-icon"><svg><use href="#i-ai"></use></svg></span><h2>AI 助手</h2></div></div>
+            <div class="switch-row"><span>启用</span><label class="switch"><input type="checkbox" id="setAiOn" checked><i></i></label></div>
+            <div class="field"><label for="setAiUrl">服务地址</label><input type="text" id="setAiUrl" placeholder="留空只用本地短句" autocomplete="off" spellcheck="false"></div>
+            <div class="field"><label for="aiText">试一句</label>
+              <div class="input-action"><input type="text" id="aiText" placeholder="换成工作台" autocomplete="off"><button class="btn sm" id="btnAiAsk" type="button">发送</button></div>
+            </div>
+            <p class="ai-say" id="aiSay" hidden></p>
+            <div class="actions"><button class="btn ghost sm" id="btnAiSave" type="button">保存设置</button></div>
+          </div>
+          <div class="card setting-card ota-card">
+            <div class="card-head"><div class="setting-title"><span class="setting-icon"><svg><use href="#i-chip"></use></svg></span><h2>固件更新</h2></div></div>
+            <div class="ota-layout"><div class="ota-details"><dl class="kv"><dt>当前版本</dt><dd id="otaVer">—</dd><dt>运行分区</dt><dd id="otaPart">—</dd><dt>待写槽容量</dt><dd id="otaSlot">—</dd></dl><div class="banner warn compact" id="otaWarn"><strong>更新时必须连接 USB，期间请勿断电。</strong></div></div><div class="ota-action">
+              <label class="fw-drop" id="otaDrop"><input type="file" id="otaFile" accept=".bin,application/octet-stream" class="sr-only"><span class="fw-icon"><svg><use href="#i-upload"></use></svg></span><b id="otaDropTitle">选择或拖入 .bin 固件</b><span id="otaDropSub">app.bin</span></label>
+              <div class="bar-wrap" id="otaProg" hidden><div class="bar-track"><i class="bar-fill" id="otaBar"></i></div><div class="bar-meta"><span id="otaPhase">准备中</span><span id="otaPct">0%</span></div></div>
+              <div class="actions"><button class="btn" id="btnOta" type="button" disabled>上传并重启</button></div>
+            </div></div>
+            <div class="online-ota">
+              <div class="actions"><button class="btn ghost sm" id="btnFwSave" type="button">设置地址</button><button class="btn sm" id="btnFwCheck" type="button">检查更新</button><button class="btn sm" id="btnFwGo" type="button" hidden>在线更新</button></div>
+              <div class="fw-remote" id="fwRemote" hidden></div>
+            </div>
+            <div class="online-ota assets-ota">
+              <div class="actions"><button class="btn ghost sm" id="btnAssetsGo" type="button">同步媒体资源</button><span class="field-note" id="assetsHint"></span></div>
+              <div class="bar-wrap" id="assetsProg" hidden><div class="bar-track"><i class="bar-fill" id="assetsBar"></i></div><div class="bar-meta"><span id="assetsPhase">准备中</span><span id="assetsPct">0%</span></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+<dialog class="modal" id="connectDialog" aria-labelledby="connectTitle">
+  <form id="connectForm"><div class="modal-head"><div class="modal-icon"><svg><use href="#i-link"></use></svg></div><button class="icon-btn" id="btnCloseConnect" type="button" aria-label="关闭"><svg><use href="#i-close"></use></svg></button></div><h2 id="connectTitle">连接设备</h2>
+    <label class="modal-label" for="connUrl">设备地址</label><input class="modal-input" type="text" id="connUrl" placeholder="http://sweetfish.local" autocomplete="off" spellcheck="false">
+    <div class="quick-address"><span>快速填入</span><button type="button" id="quickLan" data-address="">局域网</button><button type="button" data-address="http://192.168.4.1">相册热点</button></div>
+    <div class="modal-note"><svg><use href="#i-info"></use></svg><span>相框睡着时按一下 KEY 就会醒来并进入服务模式（热点与网页可用 15 分钟）。</span></div>
+    <div class="modal-actions"><button class="btn ghost" id="btnUseDemo" type="button">离线模式</button><button class="btn" id="btnConnectSubmit" type="submit">测试并连接</button></div>
+  </form>
+</dialog>
+<dialog class="modal batch-modal" id="batchDialog" aria-labelledby="batchDlgTitle">
+    <div class="modal-head"><div class="modal-icon"><svg><use href="#i-upload"></use></svg></div><button class="icon-btn" id="btnBatchClose" type="button" aria-label="关闭"><svg><use href="#i-close"></use></svg></button></div>
+    <h2 id="batchDlgTitle">批量上传</h2>
+    <div class="batch-bar">
+      <div class="seg" id="batchFit" aria-label="整批裁切方式"><button type="button" class="sel" data-fit="cover">整批：铺满</button><button type="button" data-fit="contain">整批：适应</button></div>
+      <span class="batch-count" id="batchCount">共 0 张</span>
+    </div>
+    <ul class="batch-list" id="batchList"></ul>
+    <div class="modal-actions batch-actions">
+      <button class="btn ghost" id="btnBatchCancelDlg" type="button">取消</button>
+      <button class="btn ghost" id="btnBatchPause" type="button" hidden>暂停</button>
+      <button class="btn ghost" id="btnBatchRetry" type="button" hidden>重试失败项</button>
+      <button class="btn" id="btnBatchStart" type="button">开始上传</button>
+    </div>
+  </dialog>
+  <dialog class="modal" id="fwUrlDialog" aria-labelledby="fwUrlTitle">
+  <div class="modal-head"><div class="modal-icon"><svg><use href="#i-chip"></use></svg></div><button class="icon-btn" id="btnFwUrlClose" type="button" aria-label="关闭"><svg><use href="#i-close"></use></svg></button></div>
+  <h2 id="fwUrlTitle">设置在线更新地址</h2>
+  <label class="modal-label" for="setFwUrl">地址</label>
+  <input class="modal-input" type="text" id="setFwUrl" value="https://raw.githubusercontent.com/CY-flying/sweetfish-fw/main/manifest.json" autocomplete="off" spellcheck="false">
+  <div class="modal-actions"><button class="btn ghost" id="btnFwUrlCancel" type="button">取消</button><button class="btn" id="btnFwUrlSave" type="button">保存</button></div>
+</dialog>
+<dialog class="modal" id="otaDialog" aria-labelledby="otaDlgTitle">
+  <div class="modal-head"><div class="modal-icon"><svg><use href="#i-chip"></use></svg></div><button class="icon-btn" id="btnOtaDlgClose" type="button" aria-label="关闭"><svg><use href="#i-close"></use></svg></button></div>
+  <h2 id="otaDlgTitle">确认更新固件</h2>
+  <dl class="kv ota-meta">
+    <dt>固件版本</dt><dd id="otaDlgVer">—</dd>
+    <dt>编译日期</dt><dd id="otaDlgDate">—</dd>
+    <dt>文件大小</dt><dd id="otaDlgSize">—</dd>
+  </dl>
+  <label class="modal-label">更新说明</label>
+  <div class="ota-note" id="otaDlgNote">暂未说明</div>
+  <div class="modal-actions"><button class="btn ghost" id="btnOtaCancel" type="button">取消</button><button class="btn" id="btnOtaConfirm" type="button">开始更新</button></div>
+</dialog>
+<dialog class="modal photo-modal" id="photoDialog" aria-labelledby="photoTitle">
+  <div class="modal-head"><div class="modal-icon"><svg><use href="#i-image"></use></svg></div><button class="icon-btn" id="btnClosePhoto" type="button" aria-label="关闭"><svg><use href="#i-close"></use></svg></button></div>
+  <h2 id="photoTitle">照片预览</h2>
+  <p class="photo-sub" id="photoSub">—</p>
+  <div class="photo-stage"><canvas id="photoCanvas" width="800" height="480"></canvas><span class="photo-loading" id="photoLoading">正在读取照片…</span></div>
+  <div class="modal-actions"><button class="btn ghost" id="btnPhotoClose" type="button">关闭</button><button class="btn" id="btnPhotoShow" type="button">上屏</button></div>
+</dialog>
+<div id="toasts" aria-live="polite" aria-atomic="true"></div>
+<script src="icons.js?v=3"></script><script src="fonts.js?v=3"></script><script src="bar.js?v=3"></script><script src="cities.js?v=3"></script>
+<script src="dither.js?v=3"></script><script src="api.js?v=3"></script><script src="app.js?v=3"></script>
+</body>
+</html>
